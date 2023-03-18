@@ -547,9 +547,13 @@ footer {
   color: var(--accent-color);
   width: 264px;
 }
+
+.footer-social {
+  margin-right: 80px;
+}
 .footer-social-title,
 .form-label {
-  display: block;
+  /* display: block; */
   color: var(--white-color);
   margin-bottom: 16px;
   font-weight: 500;
@@ -558,7 +562,6 @@ footer {
 .footer-social-list {
   display: flex;
   gap: 16px;
-  margin-right: 80px;
 }
 
 .footer-social-item {
@@ -597,7 +600,7 @@ footer {
   width: 264px;
   height: 40px;
   font-size: 12px;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white-color);
   color: var(--white-color);
   background-color: transparent;
   border-radius: 4px;
@@ -638,14 +641,14 @@ footer {
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
 
-  /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
   position: absolute;
   width: 408px;
-  min-height: 576px;
+  min-height: 584px;
   padding: 24px;
 
   top: 50%;
@@ -694,7 +697,6 @@ footer {
   margin-bottom: 16px;
 
   font-weight: 500;
-  font-size: 16px;
   text-align: center;
 
   color: var(--secondary-text-color);
@@ -710,7 +712,6 @@ footer {
 .input-label,
 .check-text {
   display: block;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
